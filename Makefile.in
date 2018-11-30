@@ -139,111 +139,73 @@ am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(bindir)" \
 LTLIBRARIES = $(lib_LTLIBRARIES)
 libfdk_aac_la_LIBADD =
 am__dirstamp = $(am__leading_dot)dirstamp
-am__objects_1 = libAACdec/src/FDK_delay.lo libAACdec/src/aac_ram.lo \
-	libAACdec/src/aac_rom.lo libAACdec/src/aacdec_drc.lo \
-	libAACdec/src/aacdec_hcr.lo libAACdec/src/aacdec_hcr_bit.lo \
-	libAACdec/src/aacdec_hcrs.lo libAACdec/src/aacdec_pns.lo \
-	libAACdec/src/aacdec_tns.lo libAACdec/src/aacdecoder.lo \
-	libAACdec/src/aacdecoder_lib.lo libAACdec/src/block.lo \
-	libAACdec/src/channel.lo libAACdec/src/channelinfo.lo \
-	libAACdec/src/conceal.lo libAACdec/src/ldfiltbank.lo \
-	libAACdec/src/pulsedata.lo libAACdec/src/rvlc.lo \
-	libAACdec/src/rvlcbit.lo libAACdec/src/rvlcconceal.lo \
-	libAACdec/src/stereo.lo libAACdec/src/usacdec_ace_d4t64.lo \
-	libAACdec/src/usacdec_ace_ltp.lo \
-	libAACdec/src/usacdec_acelp.lo libAACdec/src/usacdec_fac.lo \
-	libAACdec/src/usacdec_lpc.lo libAACdec/src/usacdec_lpd.lo \
-	libAACdec/src/usacdec_rom.lo
-am__objects_2 = libAACenc/src/aacEnc_ram.lo \
-	libAACenc/src/aacEnc_rom.lo libAACenc/src/aacenc.lo \
-	libAACenc/src/aacenc_lib.lo libAACenc/src/aacenc_pns.lo \
-	libAACenc/src/aacenc_tns.lo libAACenc/src/adj_thr.lo \
-	libAACenc/src/band_nrg.lo libAACenc/src/bandwidth.lo \
-	libAACenc/src/bit_cnt.lo libAACenc/src/bitenc.lo \
-	libAACenc/src/block_switch.lo libAACenc/src/channel_map.lo \
-	libAACenc/src/chaosmeasure.lo libAACenc/src/dyn_bits.lo \
-	libAACenc/src/grp_data.lo libAACenc/src/intensity.lo \
-	libAACenc/src/line_pe.lo libAACenc/src/metadata_compressor.lo \
-	libAACenc/src/metadata_main.lo libAACenc/src/mps_main.lo \
-	libAACenc/src/ms_stereo.lo libAACenc/src/noisedet.lo \
-	libAACenc/src/pnsparam.lo libAACenc/src/pre_echo_control.lo \
-	libAACenc/src/psy_configuration.lo libAACenc/src/psy_main.lo \
-	libAACenc/src/qc_main.lo libAACenc/src/quantize.lo \
-	libAACenc/src/sf_estim.lo libAACenc/src/spreading.lo \
-	libAACenc/src/tonality.lo libAACenc/src/transform.lo
-am__objects_3 = libArithCoding/src/ac_arith_coder.lo
-am__objects_4 = libDRCdec/src/FDK_drcDecLib.lo \
-	libDRCdec/src/drcDec_gainDecoder.lo \
-	libDRCdec/src/drcDec_reader.lo libDRCdec/src/drcDec_rom.lo \
-	libDRCdec/src/drcDec_selectionProcess.lo \
-	libDRCdec/src/drcDec_tools.lo libDRCdec/src/drcGainDec_init.lo \
-	libDRCdec/src/drcGainDec_preprocess.lo \
-	libDRCdec/src/drcGainDec_process.lo
-am__objects_5 = libMpegTPDec/src/tpdec_adif.lo \
+am__objects_1 = libAACdec/src/aacdec_drc.lo \
+	libAACdec/src/aacdec_hcr.lo libAACdec/src/aacdecoder.lo \
+	libAACdec/src/aacdec_pns.lo libAACdec/src/aac_ram.lo \
+	libAACdec/src/block.lo libAACdec/src/channelinfo.lo \
+	libAACdec/src/ldfiltbank.lo libAACdec/src/rvlcbit.lo \
+	libAACdec/src/rvlc.lo libAACdec/src/aacdec_hcr_bit.lo \
+	libAACdec/src/aacdec_hcrs.lo libAACdec/src/aacdecoder_lib.lo \
+	libAACdec/src/aacdec_tns.lo libAACdec/src/aac_rom.lo \
+	libAACdec/src/channel.lo libAACdec/src/conceal.lo \
+	libAACdec/src/pulsedata.lo libAACdec/src/rvlcconceal.lo \
+	libAACdec/src/stereo.lo
+am__objects_2 = libAACenc/src/aacenc.lo libAACenc/src/aacEnc_ram.lo \
+	libAACenc/src/band_nrg.lo libAACenc/src/block_switch.lo \
+	libAACenc/src/grp_data.lo libAACenc/src/metadata_main.lo \
+	libAACenc/src/pre_echo_control.lo libAACenc/src/quantize.lo \
+	libAACenc/src/tonality.lo libAACenc/src/aacEnc_rom.lo \
+	libAACenc/src/bandwidth.lo libAACenc/src/channel_map.lo \
+	libAACenc/src/intensity.lo libAACenc/src/ms_stereo.lo \
+	libAACenc/src/psy_configuration.lo libAACenc/src/sf_estim.lo \
+	libAACenc/src/transform.lo libAACenc/src/aacenc_lib.lo \
+	libAACenc/src/aacenc_tns.lo libAACenc/src/bit_cnt.lo \
+	libAACenc/src/chaosmeasure.lo libAACenc/src/line_pe.lo \
+	libAACenc/src/noisedet.lo libAACenc/src/psy_main.lo \
+	libAACenc/src/spreading.lo libAACenc/src/aacenc_pns.lo \
+	libAACenc/src/adj_thr.lo libAACenc/src/bitenc.lo \
+	libAACenc/src/dyn_bits.lo libAACenc/src/metadata_compressor.lo \
+	libAACenc/src/pnsparam.lo libAACenc/src/qc_main.lo
+am__objects_3 = libMpegTPDec/src/tpdec_adif.lo \
 	libMpegTPDec/src/tpdec_adts.lo libMpegTPDec/src/tpdec_asc.lo \
 	libMpegTPDec/src/tpdec_drm.lo libMpegTPDec/src/tpdec_latm.lo \
 	libMpegTPDec/src/tpdec_lib.lo
-am__objects_6 = libMpegTPEnc/src/tpenc_adif.lo \
+am__objects_4 = libMpegTPEnc/src/tpenc_adif.lo \
 	libMpegTPEnc/src/tpenc_adts.lo libMpegTPEnc/src/tpenc_asc.lo \
 	libMpegTPEnc/src/tpenc_latm.lo libMpegTPEnc/src/tpenc_lib.lo
-am__objects_7 = libSACdec/src/sac_bitdec.lo \
-	libSACdec/src/sac_calcM1andM2.lo libSACdec/src/sac_dec.lo \
-	libSACdec/src/sac_dec_conceal.lo libSACdec/src/sac_dec_lib.lo \
-	libSACdec/src/sac_process.lo libSACdec/src/sac_qmf.lo \
-	libSACdec/src/sac_reshapeBBEnv.lo libSACdec/src/sac_rom.lo \
-	libSACdec/src/sac_smoothing.lo libSACdec/src/sac_stp.lo \
-	libSACdec/src/sac_tsd.lo
-am__objects_8 = libSACenc/src/sacenc_bitstream.lo \
-	libSACenc/src/sacenc_delay.lo \
-	libSACenc/src/sacenc_dmx_tdom_enh.lo \
-	libSACenc/src/sacenc_filter.lo \
-	libSACenc/src/sacenc_framewindowing.lo \
-	libSACenc/src/sacenc_huff_tab.lo libSACenc/src/sacenc_lib.lo \
-	libSACenc/src/sacenc_nlc_enc.lo \
-	libSACenc/src/sacenc_onsetdetect.lo \
-	libSACenc/src/sacenc_paramextract.lo \
-	libSACenc/src/sacenc_staticgain.lo \
-	libSACenc/src/sacenc_tree.lo \
-	libSACenc/src/sacenc_vectorfunctions.lo
-am__objects_9 = libSBRdec/src/HFgen_preFlat.lo \
-	libSBRdec/src/env_calc.lo libSBRdec/src/env_dec.lo \
-	libSBRdec/src/env_extr.lo libSBRdec/src/hbe.lo \
-	libSBRdec/src/huff_dec.lo libSBRdec/src/lpp_tran.lo \
-	libSBRdec/src/psbitdec.lo libSBRdec/src/psdec.lo \
-	libSBRdec/src/psdec_drm.lo libSBRdec/src/psdecrom_drm.lo \
-	libSBRdec/src/pvc_dec.lo libSBRdec/src/sbr_crc.lo \
-	libSBRdec/src/sbr_deb.lo libSBRdec/src/sbr_dec.lo \
-	libSBRdec/src/sbr_ram.lo libSBRdec/src/sbr_rom.lo \
-	libSBRdec/src/sbrdec_drc.lo libSBRdec/src/sbrdec_freq_sca.lo \
-	libSBRdec/src/sbrdecoder.lo
-am__objects_10 = libSBRenc/src/bit_sbr.lo libSBRenc/src/code_env.lo \
-	libSBRenc/src/env_bit.lo libSBRenc/src/env_est.lo \
-	libSBRenc/src/fram_gen.lo libSBRenc/src/invf_est.lo \
-	libSBRenc/src/mh_det.lo libSBRenc/src/nf_est.lo \
+am__objects_5 = libSBRdec/src/env_calc.lo libSBRdec/src/env_dec.lo \
+	libSBRdec/src/env_extr.lo libSBRdec/src/huff_dec.lo \
+	libSBRdec/src/lpp_tran.lo libSBRdec/src/psbitdec.lo \
+	libSBRdec/src/psdec.lo libSBRdec/src/psdec_hybrid.lo \
+	libSBRdec/src/sbr_crc.lo libSBRdec/src/sbr_deb.lo \
+	libSBRdec/src/sbr_dec.lo libSBRdec/src/sbrdec_drc.lo \
+	libSBRdec/src/sbrdec_freq_sca.lo libSBRdec/src/sbrdecoder.lo \
+	libSBRdec/src/sbr_ram.lo libSBRdec/src/sbr_rom.lo
+am__objects_6 = libSBRenc/src/bit_sbr.lo libSBRenc/src/env_bit.lo \
+	libSBRenc/src/fram_gen.lo libSBRenc/src/mh_det.lo \
 	libSBRenc/src/ps_bitenc.lo libSBRenc/src/ps_encode.lo \
-	libSBRenc/src/ps_main.lo libSBRenc/src/resampler.lo \
-	libSBRenc/src/sbr_encoder.lo libSBRenc/src/sbr_misc.lo \
-	libSBRenc/src/sbrenc_freq_sca.lo libSBRenc/src/sbrenc_ram.lo \
-	libSBRenc/src/sbrenc_rom.lo libSBRenc/src/ton_corr.lo \
+	libSBRenc/src/resampler.lo libSBRenc/src/sbr_encoder.lo \
+	libSBRenc/src/sbr_ram.lo libSBRenc/src/ton_corr.lo \
+	libSBRenc/src/code_env.lo libSBRenc/src/env_est.lo \
+	libSBRenc/src/invf_est.lo libSBRenc/src/nf_est.lo \
+	libSBRenc/src/ps_main.lo libSBRenc/src/sbrenc_freq_sca.lo \
+	libSBRenc/src/sbr_misc.lo libSBRenc/src/sbr_rom.lo \
 	libSBRenc/src/tran_det.lo
-am__objects_11 = libPCMutils/src/limiter.lo \
-	libPCMutils/src/pcm_utils.lo libPCMutils/src/pcmdmx_lib.lo
-am__objects_12 = libFDK/src/FDK_bitbuffer.lo libFDK/src/FDK_core.lo \
-	libFDK/src/FDK_crc.lo libFDK/src/FDK_decorrelate.lo \
-	libFDK/src/FDK_hybrid.lo libFDK/src/FDK_lpc.lo \
-	libFDK/src/FDK_matrixCalloc.lo libFDK/src/FDK_qmf_domain.lo \
+am__objects_7 = libPCMutils/src/limiter.lo \
+	libPCMutils/src/pcmutils_lib.lo
+am__objects_8 = libFDK/src/autocorr2nd.lo libFDK/src/dct.lo \
+	libFDK/src/FDK_bitbuffer.lo libFDK/src/FDK_core.lo \
+	libFDK/src/FDK_crc.lo libFDK/src/FDK_hybrid.lo \
 	libFDK/src/FDK_tools_rom.lo libFDK/src/FDK_trigFcts.lo \
-	libFDK/src/autocorr2nd.lo libFDK/src/dct.lo libFDK/src/fft.lo \
-	libFDK/src/fft_rad2.lo libFDK/src/fixpoint_math.lo \
-	libFDK/src/huff_nodes.lo libFDK/src/mdct.lo \
-	libFDK/src/nlc_dec.lo libFDK/src/qmf.lo libFDK/src/scale.lo
-am__objects_13 = libSYS/src/genericStds.lo \
-	libSYS/src/syslib_channelMapDescr.lo
+	libFDK/src/fft.lo libFDK/src/fft_rad2.lo \
+	libFDK/src/fixpoint_math.lo libFDK/src/mdct.lo \
+	libFDK/src/qmf.lo libFDK/src/scale.lo
+am__objects_9 = libSYS/src/cmdl_parser.lo libSYS/src/conv_string.lo \
+	libSYS/src/genericStds.lo libSYS/src/wav_file.lo
 am_libfdk_aac_la_OBJECTS = $(am__objects_1) $(am__objects_2) \
 	$(am__objects_3) $(am__objects_4) $(am__objects_5) \
 	$(am__objects_6) $(am__objects_7) $(am__objects_8) \
-	$(am__objects_9) $(am__objects_10) $(am__objects_11) \
-	$(am__objects_12) $(am__objects_13)
+	$(am__objects_9)
 libfdk_aac_la_OBJECTS = $(am_libfdk_aac_la_OBJECTS)
 PROGRAMS = $(bin_PROGRAMS)
 am__aac_enc_SOURCES_DIST = aac-enc.c wavreader.c
@@ -488,10 +450,6 @@ AUTOMAKE_OPTIONS = subdir-objects
 AM_CPPFLAGS = \
     -I$(top_srcdir)/libAACdec/include \
     -I$(top_srcdir)/libAACenc/include \
-    -I$(top_srcdir)/libArithCoding/include \
-    -I$(top_srcdir)/libDRCdec/include \
-    -I$(top_srcdir)/libSACdec/include \
-    -I$(top_srcdir)/libSACenc/include \
     -I$(top_srcdir)/libSBRdec/include \
     -I$(top_srcdir)/libSBRenc/include \
     -I$(top_srcdir)/libMpegTPDec/include \
@@ -509,7 +467,6 @@ fdk_aacinclude_HEADERS = \
     $(top_srcdir)/libSYS/include/machine_type.h \
     $(top_srcdir)/libSYS/include/genericStds.h \
     $(top_srcdir)/libSYS/include/FDK_audio.h \
-    $(top_srcdir)/libSYS/include/syslib_channelMapDescr.h \
     $(top_srcdir)/libAACenc/include/aacenc_lib.h \
     $(top_srcdir)/libAACdec/include/aacdecoder_lib.h
 
@@ -524,103 +481,74 @@ libfdk_aac_la_LDFLAGS = -version-info @FDK_AAC_VERSION@ -no-undefined \
 @EXAMPLE_TRUE@aac_enc_SOURCES = aac-enc.c wavreader.c
 @EXAMPLE_TRUE@noinst_HEADERS = wavreader.h
 AACDEC_SRC = \
-    libAACdec/src/FDK_delay.cpp \
-    libAACdec/src/aac_ram.cpp \
-    libAACdec/src/aac_rom.cpp \
     libAACdec/src/aacdec_drc.cpp \
     libAACdec/src/aacdec_hcr.cpp \
+    libAACdec/src/aacdecoder.cpp \
+    libAACdec/src/aacdec_pns.cpp \
+    libAACdec/src/aac_ram.cpp \
+    libAACdec/src/block.cpp \
+    libAACdec/src/channelinfo.cpp \
+    libAACdec/src/ldfiltbank.cpp \
+    libAACdec/src/rvlcbit.cpp \
+    libAACdec/src/rvlc.cpp \
     libAACdec/src/aacdec_hcr_bit.cpp \
     libAACdec/src/aacdec_hcrs.cpp \
-    libAACdec/src/aacdec_pns.cpp \
-    libAACdec/src/aacdec_tns.cpp \
-    libAACdec/src/aacdecoder.cpp \
     libAACdec/src/aacdecoder_lib.cpp \
-    libAACdec/src/block.cpp \
+    libAACdec/src/aacdec_tns.cpp \
+    libAACdec/src/aac_rom.cpp \
     libAACdec/src/channel.cpp \
-    libAACdec/src/channelinfo.cpp \
     libAACdec/src/conceal.cpp \
-    libAACdec/src/ldfiltbank.cpp \
     libAACdec/src/pulsedata.cpp \
-    libAACdec/src/rvlc.cpp \
-    libAACdec/src/rvlcbit.cpp \
     libAACdec/src/rvlcconceal.cpp \
-    libAACdec/src/stereo.cpp \
-    libAACdec/src/usacdec_ace_d4t64.cpp \
-    libAACdec/src/usacdec_ace_ltp.cpp \
-    libAACdec/src/usacdec_acelp.cpp \
-    libAACdec/src/usacdec_fac.cpp \
-    libAACdec/src/usacdec_lpc.cpp \
-    libAACdec/src/usacdec_lpd.cpp \
-    libAACdec/src/usacdec_rom.cpp
+    libAACdec/src/stereo.cpp
 
 AACENC_SRC = \
-    libAACenc/src/aacEnc_ram.cpp \
-    libAACenc/src/aacEnc_rom.cpp \
     libAACenc/src/aacenc.cpp \
-    libAACenc/src/aacenc_lib.cpp \
-    libAACenc/src/aacenc_pns.cpp \
-    libAACenc/src/aacenc_tns.cpp \
-    libAACenc/src/adj_thr.cpp \
+    libAACenc/src/aacEnc_ram.cpp \
     libAACenc/src/band_nrg.cpp \
-    libAACenc/src/bandwidth.cpp \
-    libAACenc/src/bit_cnt.cpp \
-    libAACenc/src/bitenc.cpp \
     libAACenc/src/block_switch.cpp \
-    libAACenc/src/channel_map.cpp \
-    libAACenc/src/chaosmeasure.cpp \
-    libAACenc/src/dyn_bits.cpp \
     libAACenc/src/grp_data.cpp \
-    libAACenc/src/intensity.cpp \
-    libAACenc/src/line_pe.cpp \
-    libAACenc/src/metadata_compressor.cpp \
     libAACenc/src/metadata_main.cpp \
-    libAACenc/src/mps_main.cpp \
-    libAACenc/src/ms_stereo.cpp \
-    libAACenc/src/noisedet.cpp \
-    libAACenc/src/pnsparam.cpp \
     libAACenc/src/pre_echo_control.cpp \
-    libAACenc/src/psy_configuration.cpp \
-    libAACenc/src/psy_main.cpp \
-    libAACenc/src/qc_main.cpp \
     libAACenc/src/quantize.cpp \
-    libAACenc/src/sf_estim.cpp \
-    libAACenc/src/spreading.cpp \
     libAACenc/src/tonality.cpp \
-    libAACenc/src/transform.cpp
-
-ARITHCODING_SRC = \
-    libArithCoding/src/ac_arith_coder.cpp
-
-DRCDEC_SRC = \
-    libDRCdec/src/FDK_drcDecLib.cpp \
-    libDRCdec/src/drcDec_gainDecoder.cpp \
-    libDRCdec/src/drcDec_reader.cpp \
-    libDRCdec/src/drcDec_rom.cpp \
-    libDRCdec/src/drcDec_selectionProcess.cpp \
-    libDRCdec/src/drcDec_tools.cpp \
-    libDRCdec/src/drcGainDec_init.cpp \
-    libDRCdec/src/drcGainDec_preprocess.cpp \
-    libDRCdec/src/drcGainDec_process.cpp
+    libAACenc/src/aacEnc_rom.cpp \
+    libAACenc/src/bandwidth.cpp \
+    libAACenc/src/channel_map.cpp \
+    libAACenc/src/intensity.cpp \
+    libAACenc/src/ms_stereo.cpp \
+    libAACenc/src/psy_configuration.cpp \
+    libAACenc/src/sf_estim.cpp \
+    libAACenc/src/transform.cpp \
+    libAACenc/src/aacenc_lib.cpp \
+    libAACenc/src/aacenc_tns.cpp \
+    libAACenc/src/bit_cnt.cpp \
+    libAACenc/src/chaosmeasure.cpp \
+    libAACenc/src/line_pe.cpp \
+    libAACenc/src/noisedet.cpp \
+    libAACenc/src/psy_main.cpp \
+    libAACenc/src/spreading.cpp \
+    libAACenc/src/aacenc_pns.cpp \
+    libAACenc/src/adj_thr.cpp \
+    libAACenc/src/bitenc.cpp \
+    libAACenc/src/dyn_bits.cpp \
+    libAACenc/src/metadata_compressor.cpp \
+    libAACenc/src/pnsparam.cpp \
+    libAACenc/src/qc_main.cpp
 
 FDK_SRC = \
+    libFDK/src/autocorr2nd.cpp \
+    libFDK/src/dct.cpp \
     libFDK/src/FDK_bitbuffer.cpp \
     libFDK/src/FDK_core.cpp \
     libFDK/src/FDK_crc.cpp \
-    libFDK/src/FDK_decorrelate.cpp \
     libFDK/src/FDK_hybrid.cpp \
-    libFDK/src/FDK_lpc.cpp \
-    libFDK/src/FDK_matrixCalloc.cpp \
-    libFDK/src/FDK_qmf_domain.cpp \
     libFDK/src/FDK_tools_rom.cpp \
     libFDK/src/FDK_trigFcts.cpp \
-    libFDK/src/autocorr2nd.cpp \
-    libFDK/src/dct.cpp \
     libFDK/src/fft.cpp \
     libFDK/src/fft_rad2.cpp \
     libFDK/src/fixpoint_math.cpp \
-    libFDK/src/huff_nodes.cpp \
     libFDK/src/mdct.cpp \
-    libFDK/src/nlc_dec.cpp \
     libFDK/src/qmf.cpp \
     libFDK/src/scale.cpp
 
@@ -641,96 +569,60 @@ MPEGTPENC_SRC = \
 
 PCMUTILS_SRC = \
     libPCMutils/src/limiter.cpp \
-    libPCMutils/src/pcm_utils.cpp \
-    libPCMutils/src/pcmdmx_lib.cpp
-
-SACDEC_SRC = \
-    libSACdec/src/sac_bitdec.cpp \
-    libSACdec/src/sac_calcM1andM2.cpp \
-    libSACdec/src/sac_dec.cpp \
-    libSACdec/src/sac_dec_conceal.cpp \
-    libSACdec/src/sac_dec_lib.cpp \
-    libSACdec/src/sac_process.cpp \
-    libSACdec/src/sac_qmf.cpp \
-    libSACdec/src/sac_reshapeBBEnv.cpp \
-    libSACdec/src/sac_rom.cpp \
-    libSACdec/src/sac_smoothing.cpp \
-    libSACdec/src/sac_stp.cpp \
-    libSACdec/src/sac_tsd.cpp
-
-SACENC_SRC = \
-    libSACenc/src/sacenc_bitstream.cpp \
-    libSACenc/src/sacenc_delay.cpp \
-    libSACenc/src/sacenc_dmx_tdom_enh.cpp \
-    libSACenc/src/sacenc_filter.cpp \
-    libSACenc/src/sacenc_framewindowing.cpp \
-    libSACenc/src/sacenc_huff_tab.cpp \
-    libSACenc/src/sacenc_lib.cpp \
-    libSACenc/src/sacenc_nlc_enc.cpp \
-    libSACenc/src/sacenc_onsetdetect.cpp \
-    libSACenc/src/sacenc_paramextract.cpp \
-    libSACenc/src/sacenc_staticgain.cpp \
-    libSACenc/src/sacenc_tree.cpp \
-    libSACenc/src/sacenc_vectorfunctions.cpp
+    libPCMutils/src/pcmutils_lib.cpp
 
 SBRDEC_SRC = \
-    libSBRdec/src/HFgen_preFlat.cpp \
     libSBRdec/src/env_calc.cpp \
     libSBRdec/src/env_dec.cpp \
     libSBRdec/src/env_extr.cpp \
-    libSBRdec/src/hbe.cpp \
     libSBRdec/src/huff_dec.cpp \
     libSBRdec/src/lpp_tran.cpp \
     libSBRdec/src/psbitdec.cpp \
     libSBRdec/src/psdec.cpp \
-    libSBRdec/src/psdec_drm.cpp \
-    libSBRdec/src/psdecrom_drm.cpp \
-    libSBRdec/src/pvc_dec.cpp \
+    libSBRdec/src/psdec_hybrid.cpp \
     libSBRdec/src/sbr_crc.cpp \
     libSBRdec/src/sbr_deb.cpp \
     libSBRdec/src/sbr_dec.cpp \
-    libSBRdec/src/sbr_ram.cpp \
-    libSBRdec/src/sbr_rom.cpp \
     libSBRdec/src/sbrdec_drc.cpp \
     libSBRdec/src/sbrdec_freq_sca.cpp \
-    libSBRdec/src/sbrdecoder.cpp
+    libSBRdec/src/sbrdecoder.cpp \
+    libSBRdec/src/sbr_ram.cpp \
+    libSBRdec/src/sbr_rom.cpp
 
 SBRENC_SRC = \
     libSBRenc/src/bit_sbr.cpp \
-    libSBRenc/src/code_env.cpp \
     libSBRenc/src/env_bit.cpp \
-    libSBRenc/src/env_est.cpp \
     libSBRenc/src/fram_gen.cpp \
-    libSBRenc/src/invf_est.cpp \
     libSBRenc/src/mh_det.cpp \
-    libSBRenc/src/nf_est.cpp \
     libSBRenc/src/ps_bitenc.cpp \
     libSBRenc/src/ps_encode.cpp \
-    libSBRenc/src/ps_main.cpp \
     libSBRenc/src/resampler.cpp \
     libSBRenc/src/sbr_encoder.cpp \
-    libSBRenc/src/sbr_misc.cpp \
-    libSBRenc/src/sbrenc_freq_sca.cpp \
-    libSBRenc/src/sbrenc_ram.cpp \
-    libSBRenc/src/sbrenc_rom.cpp \
+    libSBRenc/src/sbr_ram.cpp \
     libSBRenc/src/ton_corr.cpp \
+    libSBRenc/src/code_env.cpp \
+    libSBRenc/src/env_est.cpp \
+    libSBRenc/src/invf_est.cpp \
+    libSBRenc/src/nf_est.cpp \
+    libSBRenc/src/ps_main.cpp \
+    libSBRenc/src/sbrenc_freq_sca.cpp \
+    libSBRenc/src/sbr_misc.cpp \
+    libSBRenc/src/sbr_rom.cpp \
     libSBRenc/src/tran_det.cpp
 
 SYS_SRC = \
+    libSYS/src/cmdl_parser.cpp \
+    libSYS/src/conv_string.cpp \
     libSYS/src/genericStds.cpp \
-    libSYS/src/syslib_channelMapDescr.cpp
+    libSYS/src/wav_file.cpp
 
 libfdk_aac_la_SOURCES = \
     $(AACDEC_SRC) $(AACENC_SRC) \
-    $(ARITHCODING_SRC) \
-    $(DRCDEC_SRC) \
     $(MPEGTPDEC_SRC) $(MPEGTPENC_SRC) \
-    $(SACDEC_SRC) $(SACENC_SRC) \
     $(SBRDEC_SRC) $(SBRENC_SRC) \
     $(PCMUTILS_SRC) $(FDK_SRC) $(SYS_SRC)
 
 EXTRA_DIST = \
-    $(top_srcdir)/.clang-format \
     $(top_srcdir)/autogen.sh \
     $(top_srcdir)/MODULE_LICENSE_FRAUNHOFER \
     $(top_srcdir)/NOTICE \
@@ -742,26 +634,23 @@ EXTRA_DIST = \
     $(top_srcdir)/libAACdec/src/*.h \
     $(top_srcdir)/libAACdec/src/arm/*.cpp \
     $(top_srcdir)/libAACenc/src/*.h \
-    $(top_srcdir)/libArithCoding/include/*.h \
-    $(top_srcdir)/libDRCdec/include/*.h \
-    $(top_srcdir)/libDRCdec/src/*.h \
-    $(top_srcdir)/libSACdec/include/*.h \
-    $(top_srcdir)/libSACdec/src/*.h \
-    $(top_srcdir)/libSACenc/include/*.h \
-    $(top_srcdir)/libSACenc/src/*.h \
     $(top_srcdir)/libSBRenc/src/*.h \
     $(top_srcdir)/libSBRenc/include/*.h \
     $(top_srcdir)/libSBRdec/src/*.h \
     $(top_srcdir)/libSBRdec/src/arm/*.cpp \
     $(top_srcdir)/libSBRdec/include/*.h \
     $(top_srcdir)/libSYS/include/*.h \
+    $(top_srcdir)/libSYS/src/linux/*.cpp \
+    $(top_srcdir)/libSYS/src/mips/*.cpp \
     $(top_srcdir)/libPCMutils/include/*.h \
-    $(top_srcdir)/libPCMutils/src/*.h \
     $(top_srcdir)/libMpegTPEnc/include/*.h \
     $(top_srcdir)/libMpegTPEnc/src/*.h \
+    $(top_srcdir)/libMpegTPEnc/src/version \
     $(top_srcdir)/libMpegTPDec/include/*.h \
     $(top_srcdir)/libMpegTPDec/src/*.h \
+    $(top_srcdir)/libMpegTPDec/src/version \
     $(top_srcdir)/libFDK/include/*.h \
+    $(top_srcdir)/libFDK/include/aarch64/*.h \
     $(top_srcdir)/libFDK/include/arm/*.h \
     $(top_srcdir)/libFDK/include/mips/*.h \
     $(top_srcdir)/libFDK/include/ppc/*.h \
@@ -850,61 +739,45 @@ libAACdec/src/$(am__dirstamp):
 libAACdec/src/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) libAACdec/src/$(DEPDIR)
 	@: > libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/FDK_delay.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/aac_ram.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/aac_rom.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/aacdec_drc.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/aacdec_hcr.lo: libAACdec/src/$(am__dirstamp) \
+	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
+libAACdec/src/aacdecoder.lo: libAACdec/src/$(am__dirstamp) \
+	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
+libAACdec/src/aacdec_pns.lo: libAACdec/src/$(am__dirstamp) \
+	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
+libAACdec/src/aac_ram.lo: libAACdec/src/$(am__dirstamp) \
+	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
+libAACdec/src/block.lo: libAACdec/src/$(am__dirstamp) \
+	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
+libAACdec/src/channelinfo.lo: libAACdec/src/$(am__dirstamp) \
+	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
+libAACdec/src/ldfiltbank.lo: libAACdec/src/$(am__dirstamp) \
+	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
+libAACdec/src/rvlcbit.lo: libAACdec/src/$(am__dirstamp) \
+	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
+libAACdec/src/rvlc.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/aacdec_hcr_bit.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/aacdec_hcrs.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/aacdec_pns.lo: libAACdec/src/$(am__dirstamp) \
+libAACdec/src/aacdecoder_lib.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/aacdec_tns.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/aacdecoder.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/aacdecoder_lib.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/block.lo: libAACdec/src/$(am__dirstamp) \
+libAACdec/src/aac_rom.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/channel.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/channelinfo.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/conceal.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/ldfiltbank.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/pulsedata.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/rvlc.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/rvlcbit.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/rvlcconceal.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACdec/src/stereo.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/usacdec_ace_d4t64.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/usacdec_ace_ltp.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/usacdec_acelp.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/usacdec_fac.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/usacdec_lpc.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/usacdec_lpd.lo: libAACdec/src/$(am__dirstamp) \
-	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
-libAACdec/src/usacdec_rom.lo: libAACdec/src/$(am__dirstamp) \
 	libAACdec/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/$(am__dirstamp):
 	@$(MKDIR_P) libAACenc/src
@@ -912,106 +785,70 @@ libAACenc/src/$(am__dirstamp):
 libAACenc/src/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) libAACenc/src/$(DEPDIR)
 	@: > libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/aacEnc_ram.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/aacEnc_rom.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/aacenc.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/aacenc_lib.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/aacenc_pns.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/aacenc_tns.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/adj_thr.lo: libAACenc/src/$(am__dirstamp) \
+libAACenc/src/aacEnc_ram.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/band_nrg.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/bandwidth.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/bit_cnt.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/bitenc.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/block_switch.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/channel_map.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/chaosmeasure.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/dyn_bits.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/grp_data.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/intensity.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/line_pe.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/metadata_compressor.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/metadata_main.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/mps_main.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/ms_stereo.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/noisedet.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/pnsparam.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/pre_echo_control.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/psy_configuration.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/psy_main.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/qc_main.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/quantize.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/sf_estim.lo: libAACenc/src/$(am__dirstamp) \
-	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libAACenc/src/spreading.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/tonality.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/aacEnc_rom.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/bandwidth.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/channel_map.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/intensity.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/ms_stereo.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/psy_configuration.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/sf_estim.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libAACenc/src/transform.lo: libAACenc/src/$(am__dirstamp) \
 	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
-libArithCoding/src/$(am__dirstamp):
-	@$(MKDIR_P) libArithCoding/src
-	@: > libArithCoding/src/$(am__dirstamp)
-libArithCoding/src/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) libArithCoding/src/$(DEPDIR)
-	@: > libArithCoding/src/$(DEPDIR)/$(am__dirstamp)
-libArithCoding/src/ac_arith_coder.lo:  \
-	libArithCoding/src/$(am__dirstamp) \
-	libArithCoding/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/$(am__dirstamp):
-	@$(MKDIR_P) libDRCdec/src
-	@: > libDRCdec/src/$(am__dirstamp)
-libDRCdec/src/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) libDRCdec/src/$(DEPDIR)
-	@: > libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/FDK_drcDecLib.lo: libDRCdec/src/$(am__dirstamp) \
-	libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/drcDec_gainDecoder.lo: libDRCdec/src/$(am__dirstamp) \
-	libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/drcDec_reader.lo: libDRCdec/src/$(am__dirstamp) \
-	libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/drcDec_rom.lo: libDRCdec/src/$(am__dirstamp) \
-	libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/drcDec_selectionProcess.lo:  \
-	libDRCdec/src/$(am__dirstamp) \
-	libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/drcDec_tools.lo: libDRCdec/src/$(am__dirstamp) \
-	libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/drcGainDec_init.lo: libDRCdec/src/$(am__dirstamp) \
-	libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/drcGainDec_preprocess.lo: libDRCdec/src/$(am__dirstamp) \
-	libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-libDRCdec/src/drcGainDec_process.lo: libDRCdec/src/$(am__dirstamp) \
-	libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/aacenc_lib.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/aacenc_tns.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/bit_cnt.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/chaosmeasure.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/line_pe.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/noisedet.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/psy_main.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/spreading.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/aacenc_pns.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/adj_thr.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/bitenc.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/dyn_bits.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/metadata_compressor.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/pnsparam.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
+libAACenc/src/qc_main.lo: libAACenc/src/$(am__dirstamp) \
+	libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 libMpegTPDec/src/$(am__dirstamp):
 	@$(MKDIR_P) libMpegTPDec/src
 	@: > libMpegTPDec/src/$(am__dirstamp)
@@ -1046,84 +883,17 @@ libMpegTPEnc/src/tpenc_latm.lo: libMpegTPEnc/src/$(am__dirstamp) \
 	libMpegTPEnc/src/$(DEPDIR)/$(am__dirstamp)
 libMpegTPEnc/src/tpenc_lib.lo: libMpegTPEnc/src/$(am__dirstamp) \
 	libMpegTPEnc/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/$(am__dirstamp):
-	@$(MKDIR_P) libSACdec/src
-	@: > libSACdec/src/$(am__dirstamp)
-libSACdec/src/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) libSACdec/src/$(DEPDIR)
-	@: > libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_bitdec.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_calcM1andM2.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_dec.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_dec_conceal.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_dec_lib.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_process.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_qmf.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_reshapeBBEnv.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_rom.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_smoothing.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_stp.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACdec/src/sac_tsd.lo: libSACdec/src/$(am__dirstamp) \
-	libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/$(am__dirstamp):
-	@$(MKDIR_P) libSACenc/src
-	@: > libSACenc/src/$(am__dirstamp)
-libSACenc/src/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) libSACenc/src/$(DEPDIR)
-	@: > libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_bitstream.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_delay.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_dmx_tdom_enh.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_filter.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_framewindowing.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_huff_tab.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_lib.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_nlc_enc.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_onsetdetect.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_paramextract.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_staticgain.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_tree.lo: libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-libSACenc/src/sacenc_vectorfunctions.lo:  \
-	libSACenc/src/$(am__dirstamp) \
-	libSACenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/$(am__dirstamp):
 	@$(MKDIR_P) libSBRdec/src
 	@: > libSBRdec/src/$(am__dirstamp)
 libSBRdec/src/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) libSBRdec/src/$(DEPDIR)
 	@: > libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
-libSBRdec/src/HFgen_preFlat.lo: libSBRdec/src/$(am__dirstamp) \
-	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/env_calc.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/env_dec.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/env_extr.lo: libSBRdec/src/$(am__dirstamp) \
-	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
-libSBRdec/src/hbe.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/huff_dec.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
@@ -1133,11 +903,7 @@ libSBRdec/src/psbitdec.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/psdec.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
-libSBRdec/src/psdec_drm.lo: libSBRdec/src/$(am__dirstamp) \
-	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
-libSBRdec/src/psdecrom_drm.lo: libSBRdec/src/$(am__dirstamp) \
-	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
-libSBRdec/src/pvc_dec.lo: libSBRdec/src/$(am__dirstamp) \
+libSBRdec/src/psdec_hybrid.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/sbr_crc.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
@@ -1145,15 +911,15 @@ libSBRdec/src/sbr_deb.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/sbr_dec.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
-libSBRdec/src/sbr_ram.lo: libSBRdec/src/$(am__dirstamp) \
-	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
-libSBRdec/src/sbr_rom.lo: libSBRdec/src/$(am__dirstamp) \
-	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/sbrdec_drc.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/sbrdec_freq_sca.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRdec/src/sbrdecoder.lo: libSBRdec/src/$(am__dirstamp) \
+	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
+libSBRdec/src/sbr_ram.lo: libSBRdec/src/$(am__dirstamp) \
+	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
+libSBRdec/src/sbr_rom.lo: libSBRdec/src/$(am__dirstamp) \
 	libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/$(am__dirstamp):
 	@$(MKDIR_P) libSBRenc/src
@@ -1163,39 +929,39 @@ libSBRenc/src/$(DEPDIR)/$(am__dirstamp):
 	@: > libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/bit_sbr.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
-libSBRenc/src/code_env.lo: libSBRenc/src/$(am__dirstamp) \
-	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/env_bit.lo: libSBRenc/src/$(am__dirstamp) \
-	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
-libSBRenc/src/env_est.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/fram_gen.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
-libSBRenc/src/invf_est.lo: libSBRenc/src/$(am__dirstamp) \
-	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/mh_det.lo: libSBRenc/src/$(am__dirstamp) \
-	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
-libSBRenc/src/nf_est.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/ps_bitenc.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/ps_encode.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
-libSBRenc/src/ps_main.lo: libSBRenc/src/$(am__dirstamp) \
-	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/resampler.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/sbr_encoder.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
-libSBRenc/src/sbr_misc.lo: libSBRenc/src/$(am__dirstamp) \
+libSBRenc/src/sbr_ram.lo: libSBRenc/src/$(am__dirstamp) \
+	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
+libSBRenc/src/ton_corr.lo: libSBRenc/src/$(am__dirstamp) \
+	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
+libSBRenc/src/code_env.lo: libSBRenc/src/$(am__dirstamp) \
+	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
+libSBRenc/src/env_est.lo: libSBRenc/src/$(am__dirstamp) \
+	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
+libSBRenc/src/invf_est.lo: libSBRenc/src/$(am__dirstamp) \
+	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
+libSBRenc/src/nf_est.lo: libSBRenc/src/$(am__dirstamp) \
+	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
+libSBRenc/src/ps_main.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/sbrenc_freq_sca.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
-libSBRenc/src/sbrenc_ram.lo: libSBRenc/src/$(am__dirstamp) \
+libSBRenc/src/sbr_misc.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
-libSBRenc/src/sbrenc_rom.lo: libSBRenc/src/$(am__dirstamp) \
-	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
-libSBRenc/src/ton_corr.lo: libSBRenc/src/$(am__dirstamp) \
+libSBRenc/src/sbr_rom.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
 libSBRenc/src/tran_det.lo: libSBRenc/src/$(am__dirstamp) \
 	libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
@@ -1207,9 +973,7 @@ libPCMutils/src/$(DEPDIR)/$(am__dirstamp):
 	@: > libPCMutils/src/$(DEPDIR)/$(am__dirstamp)
 libPCMutils/src/limiter.lo: libPCMutils/src/$(am__dirstamp) \
 	libPCMutils/src/$(DEPDIR)/$(am__dirstamp)
-libPCMutils/src/pcm_utils.lo: libPCMutils/src/$(am__dirstamp) \
-	libPCMutils/src/$(DEPDIR)/$(am__dirstamp)
-libPCMutils/src/pcmdmx_lib.lo: libPCMutils/src/$(am__dirstamp) \
+libPCMutils/src/pcmutils_lib.lo: libPCMutils/src/$(am__dirstamp) \
 	libPCMutils/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/$(am__dirstamp):
 	@$(MKDIR_P) libFDK/src
@@ -1217,29 +981,21 @@ libFDK/src/$(am__dirstamp):
 libFDK/src/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) libFDK/src/$(DEPDIR)
 	@: > libFDK/src/$(DEPDIR)/$(am__dirstamp)
+libFDK/src/autocorr2nd.lo: libFDK/src/$(am__dirstamp) \
+	libFDK/src/$(DEPDIR)/$(am__dirstamp)
+libFDK/src/dct.lo: libFDK/src/$(am__dirstamp) \
+	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/FDK_bitbuffer.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/FDK_core.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/FDK_crc.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
-libFDK/src/FDK_decorrelate.lo: libFDK/src/$(am__dirstamp) \
-	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/FDK_hybrid.lo: libFDK/src/$(am__dirstamp) \
-	libFDK/src/$(DEPDIR)/$(am__dirstamp)
-libFDK/src/FDK_lpc.lo: libFDK/src/$(am__dirstamp) \
-	libFDK/src/$(DEPDIR)/$(am__dirstamp)
-libFDK/src/FDK_matrixCalloc.lo: libFDK/src/$(am__dirstamp) \
-	libFDK/src/$(DEPDIR)/$(am__dirstamp)
-libFDK/src/FDK_qmf_domain.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/FDK_tools_rom.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/FDK_trigFcts.lo: libFDK/src/$(am__dirstamp) \
-	libFDK/src/$(DEPDIR)/$(am__dirstamp)
-libFDK/src/autocorr2nd.lo: libFDK/src/$(am__dirstamp) \
-	libFDK/src/$(DEPDIR)/$(am__dirstamp)
-libFDK/src/dct.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/fft.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
@@ -1247,11 +1003,7 @@ libFDK/src/fft_rad2.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/fixpoint_math.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
-libFDK/src/huff_nodes.lo: libFDK/src/$(am__dirstamp) \
-	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/mdct.lo: libFDK/src/$(am__dirstamp) \
-	libFDK/src/$(DEPDIR)/$(am__dirstamp)
-libFDK/src/nlc_dec.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
 libFDK/src/qmf.lo: libFDK/src/$(am__dirstamp) \
 	libFDK/src/$(DEPDIR)/$(am__dirstamp)
@@ -1263,9 +1015,13 @@ libSYS/src/$(am__dirstamp):
 libSYS/src/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) libSYS/src/$(DEPDIR)
 	@: > libSYS/src/$(DEPDIR)/$(am__dirstamp)
+libSYS/src/cmdl_parser.lo: libSYS/src/$(am__dirstamp) \
+	libSYS/src/$(DEPDIR)/$(am__dirstamp)
+libSYS/src/conv_string.lo: libSYS/src/$(am__dirstamp) \
+	libSYS/src/$(DEPDIR)/$(am__dirstamp)
 libSYS/src/genericStds.lo: libSYS/src/$(am__dirstamp) \
 	libSYS/src/$(DEPDIR)/$(am__dirstamp)
-libSYS/src/syslib_channelMapDescr.lo: libSYS/src/$(am__dirstamp) \
+libSYS/src/wav_file.lo: libSYS/src/$(am__dirstamp) \
 	libSYS/src/$(DEPDIR)/$(am__dirstamp)
 
 libfdk-aac.la: $(libfdk_aac_la_OBJECTS) $(libfdk_aac_la_DEPENDENCIES) $(EXTRA_libfdk_aac_la_DEPENDENCIES) 
@@ -1330,10 +1086,6 @@ mostlyclean-compile:
 	-rm -f libAACdec/src/*.lo
 	-rm -f libAACenc/src/*.$(OBJEXT)
 	-rm -f libAACenc/src/*.lo
-	-rm -f libArithCoding/src/*.$(OBJEXT)
-	-rm -f libArithCoding/src/*.lo
-	-rm -f libDRCdec/src/*.$(OBJEXT)
-	-rm -f libDRCdec/src/*.lo
 	-rm -f libFDK/src/*.$(OBJEXT)
 	-rm -f libFDK/src/*.lo
 	-rm -f libMpegTPDec/src/*.$(OBJEXT)
@@ -1342,10 +1094,6 @@ mostlyclean-compile:
 	-rm -f libMpegTPEnc/src/*.lo
 	-rm -f libPCMutils/src/*.$(OBJEXT)
 	-rm -f libPCMutils/src/*.lo
-	-rm -f libSACdec/src/*.$(OBJEXT)
-	-rm -f libSACdec/src/*.lo
-	-rm -f libSACenc/src/*.$(OBJEXT)
-	-rm -f libSACenc/src/*.lo
 	-rm -f libSBRdec/src/*.$(OBJEXT)
 	-rm -f libSBRdec/src/*.lo
 	-rm -f libSBRenc/src/*.$(OBJEXT)
@@ -1359,7 +1107,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/aac-enc.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/dummy.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/wavreader.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/FDK_delay.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/aac_ram.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/aac_rom.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/aacdec_drc.Plo@am__quote@
@@ -1380,13 +1127,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/rvlcbit.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/rvlcconceal.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/stereo.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/usacdec_ace_d4t64.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/usacdec_ace_ltp.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/usacdec_acelp.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/usacdec_fac.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/usacdec_lpc.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/usacdec_lpd.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libAACdec/src/$(DEPDIR)/usacdec_rom.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/aacEnc_ram.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/aacEnc_rom.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/aacenc.Plo@am__quote@
@@ -1407,7 +1147,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/line_pe.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/metadata_compressor.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/metadata_main.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/mps_main.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/ms_stereo.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/noisedet.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/pnsparam.Plo@am__quote@
@@ -1420,24 +1159,10 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/spreading.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/tonality.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libAACenc/src/$(DEPDIR)/transform.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libArithCoding/src/$(DEPDIR)/ac_arith_coder.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libDRCdec/src/$(DEPDIR)/FDK_drcDecLib.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libDRCdec/src/$(DEPDIR)/drcDec_gainDecoder.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libDRCdec/src/$(DEPDIR)/drcDec_reader.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libDRCdec/src/$(DEPDIR)/drcDec_rom.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libDRCdec/src/$(DEPDIR)/drcDec_selectionProcess.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libDRCdec/src/$(DEPDIR)/drcDec_tools.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libDRCdec/src/$(DEPDIR)/drcGainDec_init.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libDRCdec/src/$(DEPDIR)/drcGainDec_preprocess.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libDRCdec/src/$(DEPDIR)/drcGainDec_process.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_bitbuffer.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_core.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_crc.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_decorrelate.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_hybrid.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_lpc.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_matrixCalloc.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_qmf_domain.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_tools_rom.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/FDK_trigFcts.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/autocorr2nd.Plo@am__quote@
@@ -1445,9 +1170,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/fft.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/fft_rad2.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/fixpoint_math.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/huff_nodes.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/mdct.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/nlc_dec.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/qmf.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libFDK/src/$(DEPDIR)/scale.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libMpegTPDec/src/$(DEPDIR)/tpdec_adif.Plo@am__quote@
@@ -1462,45 +1185,15 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@libMpegTPEnc/src/$(DEPDIR)/tpenc_latm.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libMpegTPEnc/src/$(DEPDIR)/tpenc_lib.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libPCMutils/src/$(DEPDIR)/limiter.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libPCMutils/src/$(DEPDIR)/pcm_utils.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libPCMutils/src/$(DEPDIR)/pcmdmx_lib.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_bitdec.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_calcM1andM2.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_dec.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_dec_conceal.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_dec_lib.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_process.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_qmf.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_reshapeBBEnv.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_rom.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_smoothing.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_stp.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACdec/src/$(DEPDIR)/sac_tsd.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_bitstream.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_delay.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_dmx_tdom_enh.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_filter.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_framewindowing.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_huff_tab.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_lib.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_nlc_enc.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_onsetdetect.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_paramextract.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_staticgain.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_tree.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSACenc/src/$(DEPDIR)/sacenc_vectorfunctions.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/HFgen_preFlat.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@libPCMutils/src/$(DEPDIR)/pcmutils_lib.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/env_calc.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/env_dec.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/env_extr.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/hbe.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/huff_dec.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/lpp_tran.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/psbitdec.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/psdec.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/psdec_drm.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/psdecrom_drm.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/pvc_dec.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/psdec_hybrid.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/sbr_crc.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/sbr_deb.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRdec/src/$(DEPDIR)/sbr_dec.Plo@am__quote@
@@ -1523,13 +1216,15 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/resampler.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/sbr_encoder.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/sbr_misc.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/sbr_ram.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/sbr_rom.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/sbrenc_freq_sca.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/sbrenc_ram.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/sbrenc_rom.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/ton_corr.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSBRenc/src/$(DEPDIR)/tran_det.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@libSYS/src/$(DEPDIR)/cmdl_parser.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@libSYS/src/$(DEPDIR)/conv_string.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@libSYS/src/$(DEPDIR)/genericStds.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@libSYS/src/$(DEPDIR)/syslib_channelMapDescr.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@libSYS/src/$(DEPDIR)/wav_file.Plo@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
@@ -1586,14 +1281,10 @@ clean-libtool:
 	-rm -rf .libs _libs
 	-rm -rf libAACdec/src/.libs libAACdec/src/_libs
 	-rm -rf libAACenc/src/.libs libAACenc/src/_libs
-	-rm -rf libArithCoding/src/.libs libArithCoding/src/_libs
-	-rm -rf libDRCdec/src/.libs libDRCdec/src/_libs
 	-rm -rf libFDK/src/.libs libFDK/src/_libs
 	-rm -rf libMpegTPDec/src/.libs libMpegTPDec/src/_libs
 	-rm -rf libMpegTPEnc/src/.libs libMpegTPEnc/src/_libs
 	-rm -rf libPCMutils/src/.libs libPCMutils/src/_libs
-	-rm -rf libSACdec/src/.libs libSACdec/src/_libs
-	-rm -rf libSACenc/src/.libs libSACenc/src/_libs
 	-rm -rf libSBRdec/src/.libs libSBRdec/src/_libs
 	-rm -rf libSBRenc/src/.libs libSBRenc/src/_libs
 	-rm -rf libSYS/src/.libs libSYS/src/_libs
@@ -1904,10 +1595,6 @@ distclean-generic:
 	-rm -f libAACdec/src/$(am__dirstamp)
 	-rm -f libAACenc/src/$(DEPDIR)/$(am__dirstamp)
 	-rm -f libAACenc/src/$(am__dirstamp)
-	-rm -f libArithCoding/src/$(DEPDIR)/$(am__dirstamp)
-	-rm -f libArithCoding/src/$(am__dirstamp)
-	-rm -f libDRCdec/src/$(DEPDIR)/$(am__dirstamp)
-	-rm -f libDRCdec/src/$(am__dirstamp)
 	-rm -f libFDK/src/$(DEPDIR)/$(am__dirstamp)
 	-rm -f libFDK/src/$(am__dirstamp)
 	-rm -f libMpegTPDec/src/$(DEPDIR)/$(am__dirstamp)
@@ -1916,10 +1603,6 @@ distclean-generic:
 	-rm -f libMpegTPEnc/src/$(am__dirstamp)
 	-rm -f libPCMutils/src/$(DEPDIR)/$(am__dirstamp)
 	-rm -f libPCMutils/src/$(am__dirstamp)
-	-rm -f libSACdec/src/$(DEPDIR)/$(am__dirstamp)
-	-rm -f libSACdec/src/$(am__dirstamp)
-	-rm -f libSACenc/src/$(DEPDIR)/$(am__dirstamp)
-	-rm -f libSACenc/src/$(am__dirstamp)
 	-rm -f libSBRdec/src/$(DEPDIR)/$(am__dirstamp)
 	-rm -f libSBRdec/src/$(am__dirstamp)
 	-rm -f libSBRenc/src/$(DEPDIR)/$(am__dirstamp)
@@ -1937,7 +1620,7 @@ clean-am: clean-binPROGRAMS clean-generic clean-libLTLIBRARIES \
 
 distclean: distclean-am
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
-	-rm -rf ./$(DEPDIR) libAACdec/src/$(DEPDIR) libAACenc/src/$(DEPDIR) libArithCoding/src/$(DEPDIR) libDRCdec/src/$(DEPDIR) libFDK/src/$(DEPDIR) libMpegTPDec/src/$(DEPDIR) libMpegTPEnc/src/$(DEPDIR) libPCMutils/src/$(DEPDIR) libSACdec/src/$(DEPDIR) libSACenc/src/$(DEPDIR) libSBRdec/src/$(DEPDIR) libSBRenc/src/$(DEPDIR) libSYS/src/$(DEPDIR)
+	-rm -rf ./$(DEPDIR) libAACdec/src/$(DEPDIR) libAACenc/src/$(DEPDIR) libFDK/src/$(DEPDIR) libMpegTPDec/src/$(DEPDIR) libMpegTPEnc/src/$(DEPDIR) libPCMutils/src/$(DEPDIR) libSBRdec/src/$(DEPDIR) libSBRenc/src/$(DEPDIR) libSYS/src/$(DEPDIR)
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
 	distclean-libtool distclean-tags
@@ -1985,7 +1668,7 @@ installcheck-am:
 maintainer-clean: maintainer-clean-am
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
 	-rm -rf $(top_srcdir)/autom4te.cache
-	-rm -rf ./$(DEPDIR) libAACdec/src/$(DEPDIR) libAACenc/src/$(DEPDIR) libArithCoding/src/$(DEPDIR) libDRCdec/src/$(DEPDIR) libFDK/src/$(DEPDIR) libMpegTPDec/src/$(DEPDIR) libMpegTPEnc/src/$(DEPDIR) libPCMutils/src/$(DEPDIR) libSACdec/src/$(DEPDIR) libSACenc/src/$(DEPDIR) libSBRdec/src/$(DEPDIR) libSBRenc/src/$(DEPDIR) libSYS/src/$(DEPDIR)
+	-rm -rf ./$(DEPDIR) libAACdec/src/$(DEPDIR) libAACenc/src/$(DEPDIR) libFDK/src/$(DEPDIR) libMpegTPDec/src/$(DEPDIR) libMpegTPEnc/src/$(DEPDIR) libPCMutils/src/$(DEPDIR) libSBRdec/src/$(DEPDIR) libSBRenc/src/$(DEPDIR) libSYS/src/$(DEPDIR)
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 
